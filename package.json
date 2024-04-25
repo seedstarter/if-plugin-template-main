@@ -10,7 +10,11 @@
     "url": "https://github.com/Green-Software-Foundation/if-plugin-template/issues/new?assignees=&labels=feedback&projects=&template=feedback.md&title=Feedback+-+"
   },
   "dependencies": {
-    "typescript": "^5.1.6"
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
+    "octokit": "^3.2.0",
+    "typescript": "^5.1.6",
+    "yaml": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.22.10",
@@ -18,6 +22,7 @@
     "@jest/globals": "^29.6.1",
     "@types/jest": "^29.5.7",
     "@types/node": "^20.4.5",
+    "axios": "^1.6.8",
     "fixpack": "^4.0.0",
     "gts": "^5.0.0",
     "husky": "^8.0.0",
@@ -45,6 +50,6 @@
     "lint": "gts lint",
     "prepare": "husky install",
     "prepublish": "npm run build",
-    "test": "jest --verbose"
+    "test": "jest --verbose --silent=false"
   }
 }

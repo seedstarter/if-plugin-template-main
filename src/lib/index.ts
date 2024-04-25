@@ -1,1 +1,1 @@
-export {GithubActionsImporter} from './github-actions-importer';
+export {GithubIFScoreLabel} from './github-if-score-label';

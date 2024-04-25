@@ -7,8 +7,12 @@ module.exports = {
       'ts-jest',
       {
         tsconfig: 'tsconfig.json',
+        useESM: true,
       },
     ],
   },
   modulePathIgnorePatterns: ['./build'],
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
 };
